@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <h1>CU stream</h1>
+        <!-- <video width="352" height="198" controls>
+            <source
+                src="https://c75a7e79204e539d.mediapackage.us-east-1.amazonaws.com/out/v1/afe7b2772d4a4bf7bba1530f4c923ebc/index.m3u8"
+                type="application/x-mpegURL">
+        </video> -->
+
+        <!-- CSS  -->
+
+
+
+        <!-- HTML -->
+        <video id='hls-example' class="video-js vjs-default-skin" width="400" height="300" controls>
+            <source type="application/x-mpegURL"
+                src="https://cu-stream-bucket.s3.us-east-1.amazonaws.com/cu-stream-1/index.m3u8.m3u8?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCWV1LXdlc3QtMyJHMEUCIQCmeDb8hVBwkFYOhsNfaICYFdLnmCTtjVpnZbK%2FBDaycAIgXqzVUPUCGEtIoKAEL6FFUNP8LHMObfE09CIMzTiolrAq7QIIrv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw3NDQ3NTAxNjIwMTIiDAwzRm0Cr%2BL9kBhBdCrBArXLHXUe2Iqd2XVWXcYGkfMAqLtthpGg2XCf1e92%2BSuR2%2BzeDhn5%2Bv2p%2F2oUnUoiYhtQdfVFBIQcJh8spJPeej0Z5NZ2tXApJPFJhLx6FYazInRrd5RvgE9nbk22zGK5DY9juCBQ55j7Btdp2MZ%2Bv97S1MqzMnHJH6PMqVH%2BJ3dmn3oS6ZcSBQaSxzVs4sv6oGJsTE3PhwjUNQSvSkkGxezOC8e%2B3cBH3bx3rQ7h0seMJkHvvWZSFOgBYNvK%2BM0l3xQuQHMiYYRVEOxI4uaxbbu1Q5uQEa6W3LwcvzcfrwRTt1f5EhK7nquKBuMLPOhfTCYVolvyZ%2FjN6YBEAnqSvVSz7BA8UfStoHlbvT%2FH8X3Jbk6gxVOMMmDNKSECfit4ZiDgPw3WAS5QxKxDJWw32a%2BLMYJWTQfJu1vlZFPnXfSsXTCP7dWvBjqzAtgqIpvmlZJX4447AjdQzzhUH06sw79MWgg%2B8W6odBjSScyzeRheZMtyNKY%2FjeoI8EY2D1t2r8kLqmO7Evi3cdjkScg4OkKgV7FVyhgu1lVRE8Rr3RAPnfvbeYhVbySTIHM5iMeFVJxQCPyA6MjaQoKaAzP2WepswfN5ql31sLgapUtTdBuRX%2B2tEc%2FgqB%2BXJPrPYvlkKK0Z93hrJIbVtL2LxW8c0Gfj%2FsdixJgX%2BpjLlCoXLChtaqY%2F0KRm4VFTT3gLXyvpkFGHJWURtNP5MyuDpzewNAMQ6Mj%2FCMLrqT70wmYp24GZXTqYvv82fpKmyncXPz8awAGpmJgf7GPcbSy9OvLz%2F9dmouyieNMdoxIImtM91xIPbrfi7wg32yU2SMe1S3hp9RY%2BfWruKfywxRDsw4A%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240316T203912Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIA22ZURUBOBTSCDETK%2F20240316%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=ed30ab8d4ce02ed809c4a807ef410411250d870392653c2024142bff9320f233">
+        </video>
+
+
+        <!-- JS code -->
+        <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+
+    </div>
+    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+    <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+
+    <script>
+        var player = videojs('hls-example');
+        player.play();
+    </script>
+</body>
+
+</html>
